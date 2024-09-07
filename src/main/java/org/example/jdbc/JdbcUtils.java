@@ -40,8 +40,7 @@ public class JdbcUtils {
              var resultSet = statement.executeQuery(query)) {
 
             while (resultSet.next()) {
-                // Process the result set
-                // For example: print results or map to objects
+
                 System.out.println(resultSet.getString("LASTNAME"));
             }
         } catch (SQLException e) {
